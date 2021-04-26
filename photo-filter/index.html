@@ -12,18 +12,20 @@
 </head>
 <body>
   <header class="header">
-    <h1 class="header-title">Photo-filter</h1>
+    <h1 class="header-title">Photo-filter by Vladysslaw</h1>
   </header>
   <main class="main">
     <div class="filters">
       <label>
         Blur:
-        <input name="blur" data-sizing="px" type="range" min="0" max="10" value="0" />
-        <output name="result">0</output>
+        <form>
+          <input name="blur" data-sizing="px"  type="range" min="0" max="10" value="0" />
+          <output name="result">0</output>
+        </form>
       </label>
       <label>
         Invert:
-        <input name="invert" data-sizing="%" type="range" min="0" max="100" value="0" />
+        <input name="invert" data-sizing="%"  type="range" min="0" max="100" value="0" />
         <output name="result">0</output>
       </label>
       <label>
@@ -52,17 +54,21 @@
         </label>
         <button class="btn btn-save">Save picture</button>
       </div>
-      <img src="assets/img/img.jpg" alt="image" />
+      <div class="img-cont">
+        <img src="assets/img/img.jpg" alt="image" />
+        <canvas></canvas>
+      </div>
     </div>
   </main>
   <footer class="footer">
     <div class="footer-container">
-      <a class="github" href="#" target="_blank" rel="noopener noreferrer">github</a>
+      <a class="github" href="https://github.com/Vladysslaw" target="_blank" rel="noopener noreferrer">github</a>
       <a class="rss" href="https://rs.school/js/" target="_blank" rel="noopener">
         <span class="rss-year">'21</span>
       </a>
     </div>
   </footer>
   <button class="fullscreen openfullscreen"></button>
+  <script src="./app.js"></script>
 </body>
 </html>

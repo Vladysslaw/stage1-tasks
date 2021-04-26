@@ -45,7 +45,7 @@ label:not(.btn) {
   font-size: 16px;
 }
 label:hover {
-  color: #cbd5de;
+  color: #d7e8f7;
 }
 label:hover output {
   color: #a2abb3;
@@ -78,6 +78,16 @@ input[type='range']::-webkit-slider-thumb {
 label:hover input[type='range']::-webkit-slider-thumb {
   background-color: #00c9b7;
 }
+
+label:active input[type='range']::-webkit-slider-thumb {
+  border-radius: 25%;
+  width: 20px;
+}
+
+label:active output {
+  background-color:rgba(255, 255, 255, 0.5);
+}
+
 output {
   position: absolute;
   width: 60px;
@@ -178,6 +188,13 @@ img {
     sepia(var(--sepia, 0%)) saturate(var(--saturate, 100%))
     hue-rotate(var(--hue, 0deg));
 }
+
+canvas {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
 .fullscreen {
   position: fixed;
   top: 120px;
